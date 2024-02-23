@@ -10,13 +10,15 @@
 <body>
     <div class="container">
         <div class="title">Sketchpad</div>
+        <div class="mode">Mode: Coloring</div>
         <div class="content"></div>
             <div class="board"></div>
             <div class="buttons">
-                <button>Black</button>
-                <button>White</button>
-                <button>Random</button>
-                <button>Reset</button>
+                <button onclick="changecolor('black')">Black</button>
+                <button onclick="changecolor('white')">Erasor</button>
+                <button onclick="changecolor('grey')">Grey</button>
+                <button onclick="changecolor('random')">Random</button>
+                <button onclick="resetBoard()">Reset</button>
             </div>
             <div>
                 <input type="text" placeholder="Size of board"  onchange="changeSize(this.value)"/>
